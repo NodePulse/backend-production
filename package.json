@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node dist/server.js",
     "prepare": "husky",
-    "dev": "nodemon src/index.ts",
+    "dev": "nodemon src/server.ts",
     "dist": "npx tsc"
   },
   "keywords": [],
@@ -13,6 +13,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
     "@types/node": "^22.14.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.0",
